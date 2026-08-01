@@ -1,0 +1,57 @@
+body {
+  background: #0d0317;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.container {
+  background: rgba(30, 0, 50, 0.7);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(140, 0, 255, 0.3);
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+.counter {
+  font-size: 70px;
+  margin-bottom: 25px;
+  color: #d8b4fe;
+  text-shadow: 0 0 15px rgba(170, 80, 255, 0.6);
+}
+.dokmes {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 25px;
+  transition: 0.3s ease;
+  color: #f5e1ff;
+  background: #3a0f63;
+  box-shadow: 0 0 15px rgba(150, 0, 255, 0.2);
+}
+.btn.plus {
+  background: #5b21b6;
+}
+.btn.menha {
+  background: #4c1d95;
+}
+.btn.reset {
+  background: #7c3aed;
+}
+.btn.five {
+  background: #8c3aed;
+}
+.btn.fivee {
+  background: #9c3aed;
+}
+
+.btn:hover {
+  transform: translateY(+15px);
+  box-shadow: 0 0 20px rgba(170, 0, 255, 0.5);
+}
