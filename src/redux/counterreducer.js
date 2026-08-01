@@ -1,30 +1,18 @@
+import { PLUS, RESET } from "./actionType";
+
 const initialState = {
   count: 0,
 };
 
-function counterreducer(state = initialState, action) {
+function counterreducer(state = initialState, action, payload) {
   switch (action.type) {
-    case "PLUS":
+    case PLUS:
       return {
         ...state,
-        count: state.count + 1,
+        count: state.count + action.payload,
       };
-    case "NEGETIVE":
-      return {
-        ...state,
-        count: state.count - 1,
-      };
-    case "FIVE":
-      return {
-        ...state,
-        count: state.count + 5,
-      };
-    case "FIVEE":
-      return {
-        ...state,
-        count: state.count - 5,
-      };
-    case "RESET":
+
+    case RESET:
       return {
         ...state,
         count: 0,
