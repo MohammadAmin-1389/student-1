@@ -1,5 +1,13 @@
-import { createStore } from "redux";
-import counterreducer from "./counterreducer";
+import { combineReducers, createStore } from "redux";
 
-const store = createStore(counterreducer);
+import counterReducer from "./counter/counterreducer";
+import milkReducer from "./milkCounter/milkReducer";
+
+const rootReducer = combineReducers({
+  counter: counterReducer,
+  milk: milkReducer,
+});
+
+const store = createStore(rootReducer);
+
 export default store;
